@@ -16,7 +16,7 @@ class Solution:
 
         while i < len(nums):
             if nums[i] % 2 == 0:
-                [nums[i], nums[j]] = [nums[j], nums[i]]
+                nums[i], nums[j] = nums[j], nums[i]
                 i += 1
                 j += 1
             else:
