@@ -10,8 +10,16 @@ class Solution:
         while curr:
             list1.append(curr.val)
             curr = curr.next
-        print(list1,list1[::-1])
-        if list1==list1[::-1]:
-            return True
-        else:
-            return False
+        l=0
+        r = len(list1)-1
+        while l<=r:
+            if list1[l]!=list1[r]:
+                return False
+            l+=1
+            r-=1
+        return True
+        # print(list1,list1[::-1])
+        # if list1==list1[::-1]:
+        #     return True
+        # else:
+        #     return False
